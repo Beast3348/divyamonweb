@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Lists</title>
+  <link rel="stylesheet" href="style_index2.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+  body {
+      margin: 0;
+  }
+  h1, h2 {
+      font-family: 'Amatica SC', cursive;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 10px;
+  }
+  p {
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .header {
+      height: 100px;
+      text-align: center;
+      color: #fff;
+      padding: 1px;
+  }
+  .container div {
+      padding: 1%;
+      box-sizing: border-box;
+      min-height: 150px;
+  }
+  .left-col, .right-col, .mid-col, .midmid-col {
+      background-color: #f4f4f4;
+      width: 20%;
+      float: left;
+  }
+  .center-col {
+/*          background-color: pink; */
+      width: 20%;
+      background-color: #f4f4f4;
+      float: left;
+  }
+  .footer {
+      clear: both;
+      font-family: 'Amatica SC', cursive;
+      background-color: skyblue;
+      text-align: center;
+      height: 50px;
+      padding-top: 10px;
+      box-sizing: border-box;
+  }
+  header{
+    font-size: 30px;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="My Project.html">My Project</a></div>
+          <ul class="links">
+            <li><a href="My Project.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Topics</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Topics</label>
+              <ul>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="form.html">Forms</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="#">URLs</a></li>
+                <li><a href="images.html">Images</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="help-page.html">Help</a></li>
+          </ul>
+        </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <section>
+    <main>
+      <header>Unordered Lists</header>
+      <div class="container">
+        <div class="left-col">
+            <h2>List Type: Disk</h2>
+            <p><ul type="disc">
+          <li>Orange</li>
+          <li>Apple</li>
+          <li>Mango</li>
+          <li>Cherry</li>
+        </ul></p>
+        </div>
+        <div class="center-col">
+            <h2>List Type: Circle</h2>
+            <p><ul type="Circle">
+          <li>Orange</li>
+          <li>Apple</li>
+          <li>Mango</li>
+          <li>Cherry</li>
+        </ul></p>
+        </div>
+        <div class="mid-col">
+            <h2>List Type: Square</h2>
+            <p><ul type="Square">
+          <li>Orange</li>
+          <li>Apple</li>
+          <li>Mango</li>
+          <li>Cherry</li>
+        </ul></p>
+        </div>
+    </div>
+      </main>
+      <main>
+        <br>
+        <br>
+        <header>Ordered Lists</header>
+        <div class="container">
+          <div class="left-col">
+              <h2>List Type: 1</h2>
+              <p><ol type="1">
+                <li>Orange</li>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Cherry</li>
+              </ol></p>
+          </div>
+          <div class="center-col">
+              <h2>List Type: A</h2>
+              <p><ol type="A">
+                <li>Orange</li>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Cherry</li>
+              </ol></p>
+          </div>
+          <div class="mid-col">
+              <h2>List Type: a</h2>
+              <p><ol type="a">
+                <li>Orange</li>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Cherry</li>
+              </ol></p>
+          </div>
+          <div class="midmid-col">
+            <h2>List Type: I</h2>
+            <p><ol type="I">
+              <li>Orange</li>
+              <li>Apple</li>
+              <li>Mango</li>
+              <li>Cherry</li>
+            </ol></p>
+        </div>
+        <div class="midmid-col">
+          <h2>List Type: i</h2>
+          <p><ol type="i">
+            <li>Orange</li>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Cherry</li>
+          </ol></p>
+      </div>
+      </div>
+        </main>
+      <footer>
+      <p>Reached The Bottom</p>
+      </footer>
+  </section>
+</body>
+</html>

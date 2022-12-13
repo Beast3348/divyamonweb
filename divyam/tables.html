@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Tables</title>
+  <link rel="stylesheet" href="style_index2.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+  body {
+      margin: 0;
+  }
+  h1, h2 {
+      font-family: 'Amatica SC', cursive;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 10px;
+  }
+  p {
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .header {
+      height: 100px;
+      text-align: center;
+      color: #fff;
+      padding: 1px;
+  }
+  .container div {
+      padding: 1%;
+      box-sizing: border-box;
+      min-height: 150px;
+  }
+  .left-col, .right-col, .mid-col, .midmid-col {
+      background-color: #f4f4f4;
+      width: 20%;
+      float: left;
+  }
+  .midtable-col{
+    background-color: #f4f4f4;
+  }
+  .center-col {
+/*          background-color: pink; */
+      width: 20%;
+      background-color: #f4f4f4;
+      float: left;
+  }
+  .footer {
+      clear: both;
+      font-family: 'Amatica SC', cursive;
+      background-color: skyblue;
+      text-align: center;
+      height: 50px;
+      padding-top: 10px;
+      box-sizing: border-box;
+  }
+  header{
+    font-size: 30px;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="My Project.html">My Project</a></div>
+          <ul class="links">
+            <li><a href="My Project.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Topics</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Topics</label>
+              <ul>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="form.html">Forms</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="#">URLs</a></li>
+                <li><a href="images.html">Images</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="help-page.html">Help</a></li>
+          </ul>
+        </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <section>
+    <main>
+      <header>Table ATTRIBUTES</header>
+      <div class="container">
+        <div class="left-col">
+            <h2>What is table</h2>
+            <p>
+            <li>An HTML structure for creating rows and columns on a Web page. The Table tag defines the overall table and the Table Row (TR) tag is used to build each row. The Table Data (TD) tag defines the actual data.</li>
+            </p>
+        </div>
+        <div class="center-col">
+            <h2>Table Row (tr):</h2>
+            <p>
+            <li>Each table row starts with a (tr) and end with a (/tr) tag.</li>
+            <li>tr stands for table row.</li>
+            <li>You can have as many rows as you like in a table, just make sure that the number of cells are the same in each row.</li>
+          </p>
+        </div>
+        <div class="mid-col">
+          <h2>Table Cells (td):</h2>
+            <p>
+              <li> Table cell is defined by a (td) and a (/td) tag.</li>
+              <li>td stands for table data.</li>
+              <li>Table data elements are the data containers of the table.</li>
+            </p>
+      </div>
+      <div class="mid-col">
+        <h2>Table Headers:</h2>
+        <p>
+        <li>Sometimes you want your cells to be headers, in those cases use the (th) tag instead of the (td) tag:</li>
+        <li>By default, the text in (th) elements are bold and centered, but you can change that with CSS.</li>
+        <li>An HTML table contains a set of columns and actual data rows and each row consists of one or more cells</li>
+      </p>
+    </div>
+  </div>
+      </main>
+      <main>
+        <br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <header>Table ATTRIBUTES</header>
+        <div class="container">
+          <div class="midtable-col">
+              <h3>Timetable:</h3>
+              <p><table border="5" cellspacing="0">
+                <caption>Timetable</caption>
+                <tr>
+                <th colspan="6">Timetable for school</th>
+                </tr>
+                <tr>
+                <th rowspan="7">HOUR</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                </tr>
+                <tr>
+                <td>Maths</td>
+                <td>HINDI</td>
+                <td>ENG</td>
+                <td>SCI</td>
+                <td>Activities</td>
+                </tr>
+                <tr>
+                <td>GK</td>
+                <td>HINDI</td>
+                <td>ENG</td>
+                <td>SCI</td>
+                <td>Maths</td>
+                </tr>
+                <tr>
+                <td colspan="5" align="center">LUNCH</td>
+                </tr>
+                <tr>
+                <td>GK</td>
+                <td>HINDI</td>
+                <td>SST</td>
+                <td>ENG</td>
+                <td>Math</td>
+                </tr>
+                <tr>
+                <td>Math</td>
+                <td>SST</td>
+                <td>HINDI</td>
+                <td>ENG</td>
+                <td>Gk</td>
+                </tr>
+               </table>
+              </p>
+          </div>
+          <div class="midtable-col">
+            <h3>2x2 Table:</h3>
+            <p><table border="2" cellspacing="2" cellpadding="2" border="1" bgcolor="000000">
+              <tr bgcolor="#ffffff">
+              <th>Header</th>
+              <th>Header</th>
+              </tr>
+              <tr bgcolor="#ffffff">
+              <td>Header</td>
+              <td>Header</td>
+              </tr>
+            </table>
+            </p>
+        </div>
+        <div class="midtable-col">
+          <h3>Double border Table:</h3>
+          <p><table border="1" cellpadding="5" cellspacing="5" width="50%">
+            <tr>
+            <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+            </tr>
+            <tr>
+            <td>Shabbir Hussain</td>
+            <td>7000</td>
+            </tr>
+          </table>
+          </p>
+      </div>
+      <div class="midtable-col">
+        <h3>Colspan & Rowspan Table:</h3>
+        <p><table border="2" cellspacing="0">
+          <tr>
+          <th>Item/Desc</th>
+          <th>QTY</th>
+          <th>@</th>
+          <th>Price</th>
+          </tr>
+          <tr>
+          <th>Paperclips</th>
+          <th>100</th>
+          <th>to</th>
+          <th>1000</th>
+          </tr>
+          <tr>
+          <th>Papercase</th>
+          <th>10</th>
+          <th>45.00</th>
+          <th>4.50</th>
+          </tr>
+          <tr>
+          <th>Wastepaperbasket</th>
+          <th>2</th>
+          <th>75.00</th>
+          <th>1.50</th>
+          </tr>
+          <tr>
+          <th colspan="3">Subtotal</th>
+          <th>1600</th>
+          </tr>
+          <tr>
+          <th colspan="2">Tax</th>
+          <th>7%</th>
+          <th>:112</th>
+          </tr>
+          <tr>
+          <th colspan="1">Total</th>
+          <th></th>
+          <th></th>
+          <th>1712</th>
+          </tr>
+        </table>
+        </p>
+    </div>
+    <div class="midtable-col">
+      <h3>Colspan & Rowspan Table P2:</h3>
+      <p><table border="1" cellspacing="0">
+        <tr>
+          <td>Question No.</td>
+          <td>Question</td>
+          <td>Answer</td>
+          <td>Marks per Answer</td>
+          <td>Total Marks</td
+        </tr>
+        <tr>
+          <td rowspan="3">1</td>
+          <td rowspan="3">Name 3 features in a ROM</td>
+          <td>A</td>
+          <td></td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Here is a single Answer</td>
+          <td>True</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      </p>
+  </div>
+    </div>
+        </main>
+      <footer>
+      <p>Reached The Bottom</p>
+      </footer>
+  </section>
+</body>
+</html>

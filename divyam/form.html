@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Forms</title>
+  <link rel="stylesheet" href="style_index2.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+  body {
+      margin: 0;
+  }
+  h1, h2 {
+      font-family: 'Amatica SC', cursive;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 10px;
+  }
+  p {
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .header {
+      height: 100px;
+      text-align: center;
+      color: #fff;
+      padding: 1px;
+  }
+  .container div {
+      padding: 1%;
+      box-sizing: border-box;
+      min-height: 150px;
+  }
+  .left-col, .right-col, .mid-col, .midmid-col {
+      background-color: #f4f4f4;
+      width: 20%;
+      float: left;
+  }
+  .center-col {
+/*          background-color: pink; */
+      width: 20%;
+      background-color: #f4f4f4;
+      float: left;
+  }
+  .footer {
+      clear: both;
+      font-family: 'Amatica SC', cursive;
+      background-color: skyblue;
+      text-align: center;
+      height: 50px;
+      padding-top: 10px;
+      box-sizing: border-box;
+  }
+  header{
+    font-size: 30px;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="My Project.html">My Project</a></div>
+          <ul class="links">
+            <li><a href="My Project.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-link">Topics</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Topics</label>
+              <ul>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="form.html">Forms</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="#">URLs</a></li>
+                <li><a href="images.html">Images</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="help-page.html">Help</a></li>
+          </ul>
+        </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <section>
+    <main>
+      <header>FORM ATTRIBUTES</header>
+      <div class="container">
+        <div class="left-col">
+            <h2>Text Box</h2>
+            <p>
+              First Name:
+              <input type="text" name="firstname"><br>
+              Last Name:
+              <input type="text" name="lastname"><br>
+            </p>
+        </div>
+        <div class="center-col">
+            <h2>Checkbox:</h2>
+            <p>Male
+              <input type="checkbox" name="Gender" value="male"><br>
+              Female
+              <input type="checkbox" name="Gender" value="female"><br>
+            </p>
+        </div>
+        <div class="mid-col">
+            <h2>Radio Button</h2>
+            <p>I hav Bike:
+              <input type="radio" name="vehicle" value="bike"><br>
+              I hav Airplane:
+              <input type="radio" name="vehicle" value="airplane"><br>
+              I hav Car:
+              <input type="radio" name="vehicle" value="car"><br></p>
+        </div>
+        <div class="mid-col">
+          <h2>Drop Down Menu:</h2>
+          <p><label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+              <option value="Volvo">Volvo</option>
+              <option value="BMW" selected="selected">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Toyota">Toyota</option>
+              <option value="BMW">BMW</option>
+              <option value="Porshe">Porshe</option>
+            </select></p>
+      </div>
+      <div class="mid-col">
+        <h2>SCROLL OPTIONS:</h2>
+        <p><label for="cars">Choose a car:</label>
+          <br>
+          <select id="cars" name="cars" size="2">
+            <option value="Nano">Nano</option>
+            <option value="Santro">Santro</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Maruti">Maruti</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Toyota">Toyota</option>
+            <option value="BMW">BMW</option>
+            <option value="Porshe">Porshe</option>
+          </select></p>
+    </div>
+    <div class="mid-col">
+      <h2>Fieldset:</h2>
+      <p><fieldset>
+        <legend>ENTER YOUR DETAILS</legend>
+        ADDRESS:
+        <input type="text" size="3" name="ADDRESS">
+        <br>
+        AREA:
+        <input type="text" size="3" name="AREA">
+        <br>
+        STATE:
+        <input type="text" size="3" name="STATE">
+      </fieldset></p>
+  </div>
+  <div class="mid-col">
+    <h2>Button</h2>
+    <p><input type="button" value="CLICK HERE">
+			<br>
+      <br>
+			<input type="Submit" value="Submit">
+			<br>
+      <br>
+			<input type="button" value="Proceed"></p>
+  </div>
+  <div class="mid-col">
+    <h2>Textarea:</h2>
+    <p><textarea rows="5" cols="20"> Enter your text here! </textarea></p>
+  </div>
+</div>
+<div class="mid-col">
+  <h2>Email & Password</h2>
+  <p><form action="www.w3school.com">
+    <label for="Email">EMAIL: <br></label>
+    <input type="email" name="email"multiple>
+    <br>
+    <label for="Pass">PASSWORD: <br></label>
+    <input type="password" name="pass">
+    <br>
+    <input type="Submit" value="Click Me">
+  </form></p>
+</div>
+<div class="mid-col">
+  <h2>Reset Button</h2>
+  <br>
+  <p>Button: <br><button type="button"> BUTTON </button>
+    <br>
+    <br>
+    Reset: <br><button type="reset"> Reset </button></p>
+</div>
+<div class="left-col">
+  <h2>GET & POST:</h2>
+  <p><form action="www.google.com" target="blank_" method="GET">
+    <label for="Email">EMAIL:</label>
+    <input type="email" name="email"multiple>
+    <br>
+    <label for="Pass">PASSWORD:</label>
+    <input type="password" name="pass">
+    <br>
+    <input type="Submit" value="GET">
+  </form>
+  <form action="www.google.com" target="blank_" method="POST">
+    <label for="Email">EMAIL:</label>
+    <input type="email" name="email"multiple>
+    <br>
+    <label for="Pass">PASSWORD:</label>
+    <input type="password" name="pass">
+    <br>
+    <input type="Submit" value="POST">
+  </form></p>
+</div>
+</div>
+      </main>
+      <footer>
+      <p>Reached The Bottom</p>
+      </footer>
+  </section>
+</body>
+</html>
